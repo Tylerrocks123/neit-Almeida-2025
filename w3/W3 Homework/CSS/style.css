@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+    padding:30px
+}
+
+#backround{
+    background-color: pink;
+   
+    /*create the border*/
+    border: 15px solid lightblue;
+    /*aline everything to the middle*/
+    text-align: center;
+    /*set the padding*/
+    padding:15px
+}
+
+#wrap{
+    margin:auto;
+       /*Set the width*/
+    width:600px;
+    padding:5px;
+    border:5px solid lightcoral;
+}
+
+#header{
+    /*create a border*/
+    border:100px solid gold;
+    /*set the minimum height*/
+    min-height: 125px;
+}
+
+#Title{
+    /*change the font size*/
+    font-size: 60px;
+    /*set the color*/
+    color:red;
+    /*make sure its alligned to the center*/
+    text-align:center;
+    /*give it a text shadow*/
+    text-shadow: 5px 5px 50px black;
+    /*Set the height from the top of the box*/
+    line-height:25px;
+}
+
+#navBar{
+    height:55px;
+    margin:auto;
+    padding: 2px;
+    margin-top:2px;
+    margin-bottom: 2px;
+    animation: navBarAnimation 3s infinite alternate;
+}
+
+.buttonDesign{
+    width:100px;
+    border:2px solid yellowgreen;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    padding:10px;
+    margin-right: 20px;
+    margin-left:20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#mainContent{
+    min-height: 500px;
+    min-width: 500px;
+    text-shadow: 5px 5px 10px purple;
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+#container{
+    margin:auto;
+    position: relative;
+    display:grid;
+    justify-items: center;
+}
+
+#Image{
+    width:500px;
+    height:500px;
+    border: 2px solid pink
+}
+
+#Image:hover{
+    width:70%;
+}
+
+#imageHeader{
+    /*One way to call animation*/
+    animation-name: percentageTextAnimation;
+    /*how long it will play*/
+    animation-duration: 3s;
+    /*how many times to play*/
+    animation-iteration-count: infinite;
+    /*Is this animation going in reverse at the end*/
+    animation-direction: alternate;
+}
+
+@keyframes navBarAnimation{
+    from{
+        border:1px solid green;
+    }
+    to{border:10px solid yellowgreen;}
+}
+
+@keyframes percentageTextAnimation{
+    0%{color: black;
+        transform:translateX(50px)
+    }
+    25%{color:yellowgreen;
+        transform:translateX(-50px)
+    }
+    50%{color:bisque}
+    75%{color:goldenrod}
+    100%{color:teal;
+        transform:translateX(0px)
+    }
+}
+
+@keyframes textAnimation{
+    from{
+        color:black;
+    }
+    to{
+        color:palevioletred;
+    }
+}
