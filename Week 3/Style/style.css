@@ -1,0 +1,119 @@
+#bg{
+    background-color: pink;
+    padding:5px
+}
+
+#wrapper{
+    margin:auto;
+    /*Setting the width*/
+ width:800px;
+ padding:px;
+ border:4px solid white;
+ background-color: pink;
+}
+
+#header{
+    border:4px solid gold;
+    padding:5px
+}
+
+#hello{
+    font-size: 45px;
+    color:red
+}
+
+.boarder-unity{
+    color:purple;
+    font-size: 15px;
+}
+
+.gds{
+    border:40px solid black
+}
+
+#hello:hover{
+   color:blueviolet;
+}
+
+#nav-bar{
+    background-color: lightblue;
+    padding:5px
+}
+
+.buttonThing:hover{
+    color:pink
+}
+.buttonThing{
+    color:blue;
+    text-shadow: 0px 5px 10px black;
+}
+
+#main-content{
+    background-color: greenyellow;
+    text-shadow: 10px 10px 10px pink;
+    padding:5px
+}
+
+#pictureDiv{
+        margin:auto;
+        position: relative;
+        display:grid;
+        justify-items: center;
+        background-color: red;
+        width:800px
+    }
+
+    #fall:hover{
+        width:70%;
+    }
+
+    #fall{
+        width:500px;
+        height:300px
+    }
+
+    #nav-bar{
+        animation-name: percentageTextAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+    @keyframes percentageTextAnimation{
+        0%{
+            transform:translateX(100px)
+        }
+        50%{
+            transform:translateX(-100px)
+        }
+        100%{color:green;
+            transform:translateX(200px)
+        }
+    }
+
+    #fall{
+        animation-name: percentageAnimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        }
+
+        @keyframes percentageAnimation{
+            0%{
+                transform:translateX(-75px)
+            }
+            25%{
+                transform:translateX(75px)
+            }
+            50%{transform:translateX(-50px)}
+            75%{transform:translate(50px)}
+            100%{
+                transform:translateX(200px)
+            }
+        }
+    
+
+
+
+
+
