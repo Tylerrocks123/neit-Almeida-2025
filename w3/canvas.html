@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+<title>Canvas Lab Thing</title>
+<meta charset="UTF-8">
+</head>
+
+
+
+<body>
+    <h1>Canvas Lab</h1>
+    <canvas id="canvas" width="800" height="600" style="border: 1px solid"></canvas>
+
+    <script>
+        var canvas = document.getElementById("canvas")
+        var ctx = canvas.getContext("2d")
+
+        //Gives the color of the next shape about to be drawn
+        //Fills in with the color
+        ctx.fillStyle = "#C0DA74"
+
+        //Draw a rectangle
+        //1st value x pos 2nd value y pos 3 is width 4 is height
+        ctx.fillRect(40,20,50,100)
+
+        //Make a box outline
+        ctx.strokeStyle = "#94AE89"
+        ctx.lineWidth ="1"
+        ctx.strokeRect(100,20,50,100)
+
+
+        //Let's draw some lines
+        ctx.strokeStyle="#4FB286"
+        //tell canvas we are fedding it some points
+        ctx.beginPath()
+        //set the starting point
+        ctx.moveTo(0,0)
+        //the points
+        ctx.lineTo(800,600)
+        ctx.lineTo(800,0)
+        ctx.lineTo(0,600)
+        ctx.lineTo(0,0)
+        //Draw the points
+        ctx.stroke();
+
+
+
+        ctx.strokeStyle = "red"
+        ctx.beginPath()
+        ctx.moveTo(400,20)
+        ctx.lineTo(400,600)
+        ctx.stroke();
+
+
+        //drawing a triangle
+        ctx.strokeStyle = "#FFB7C3"
+        ctx.fillStyle = "#D3FAC7"
+        ctx.beginPath()
+        ctx.moveTo(400,20)
+        ctx.lineTo(450,100)
+        ctx.lineTo(400,120)
+        ctx.lineTo(350,100)
+
+        
+        //conforming a shape
+        ctx.closePath();
+        //filling in the shape
+        ctx.fill()
+        //Drawing the lines
+        ctx.stroke()
+
+        ctx.beginPath();
+        ctx.arc(270,350,280,0, 4*Math.PI/2,false)
+        ctx.closePath()
+        ctx.fill()
+        ctx.stroke()
+
+         
+        //Let's Draw a circle!
+        ctx.fillStyle = "purple"
+        ctx.beginPath();
+        //ctx.arc(x pos,y pos, radius, start angle, end angle, is clockwise)
+        ctx.arc(400,300,100,0, 4*Math.PI/2,false)
+        ctx.closePath()
+        ctx.fill()
+        ctx.stroke()
+
+
+        ctx.beginPath();
+        ctx.arc(150,300,100,0, 4*Math.PI/2,false)
+        ctx.closePath()
+        ctx.fill()
+        ctx.stroke()
+
+        ctx.strokeStyle = "red"
+        ctx.fillStyle="red"
+        ctx.beginPath()
+        ctx.moveTo(150,500)
+        ctx.lineTo(0,400)
+        ctx.lineTo(0,400)
+        ctx.lineTo(500,400)
+        ctx.lineTo(500,400)
+        ctx.lineTo(150,500)
+        ctx.closePath();
+        ctx.fill()
+        ctx.stroke()
+
+        
+    </script>
+
+</body>
+</html>
